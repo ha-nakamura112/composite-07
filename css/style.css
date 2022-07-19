@@ -96,4 +96,76 @@ body{
     padding: 3% 5%;
     color: white;
   }
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  main > section:nth-child(odd){
+    background-color: whitesmoke;
+  }
+
+  main > section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    align-items: center;
+    padding: 3%;
+  }
+
+  main > section > article:last-child{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-title{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    align-items: center;
+    text-align: center;
+  }
+  .section-title h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    color: gray;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+  }
+  .section-title p{
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .features > article:last-child{
+    row-gap: 5vh;
+  }
+
+  .features  section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    text-align: center;
+    align-items: center;
+  }
+
+  .features aside{
+    padding: 3%;
+    font-size: 30px;
+    background-color: var(--defaultOrange);
+    color: whitesmoke;
+    border-radius: 50%;
+  }
+
+  .features h3{
+    color: gray;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 22px;
+  }
+
+  .features p{
+    font-size: 14px;
+
+  }
 }

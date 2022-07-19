@@ -2,3 +2,98 @@
   margin:0;
   padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --defaultOrange:#FFAA00;
+}
+
+body{
+  font-family: "Raleway" , sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+@media(min-width:300px){
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+  }
+  nav ul{
+    display: none;
+  }
+
+  nav details{
+    font-size: 22px;
+    position: relative;
+    width: 50%;
+    text-align: right;
+  }
+
+  details ul{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width:70%;
+  }
+  details li{
+    display: flex;
+    width: 100%;
+  }
+  details a{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0,0,0,.8);
+  }
+
+  header{
+    background-image: url("/img/mountain\ \(3\).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:50vh;
+  }
+
+  header > section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.3);
+  }
+  header h1,
+  header h2{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 300;
+  }
+  header h1{
+    font-size: 22px;
+  }
+  header h2{
+    font-size: 18px;
+  }
+
+  header a{
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--defaultOrange);
+    border-radius: 5px;
+    padding: 3% 5%;
+    color: white;
+  }
+}

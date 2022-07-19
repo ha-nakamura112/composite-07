@@ -111,6 +111,8 @@ body{
     row-gap: 5vh;
     align-items: center;
     padding: 3%;
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
 
   main > section > article:last-child{
@@ -167,10 +169,46 @@ body{
     font-weight: 300;
     font-size: 22px;
   }
-
   .features p{
     font-size: 14px;
     width: 90%;
+  }
+
+  .about > article:last-child{
+    row-gap: 50px;
+  }
+  .about > :last-child > section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .about h3{
+    font-size: 20px;
+  }
+  .about h4{
+    text-transform: uppercase;
+    font-weight: 300;
+    word-spacing: 3px;
+    color: gray;
+  }
+  .about p{
+    font-size: 14px;
+    color: gray;
+    line-height: 1.5;
+  }
+
+  .about aside,
+  .about div{
+    width: 100%;
+  }
+
+  progress{
+    display: none;
+  }
+  .about div{
+    display: flex;
+    justify-content: space-between;
   }
 
   .portfolio{

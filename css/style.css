@@ -120,6 +120,17 @@ body{
     flex-direction: column;
   }
 
+  input,textarea{
+    padding: 3%;
+  }
+  textarea{
+    height: 10vh;
+  }
+  [type=submit]{
+    width: 80%;
+    padding: 3% !important;
+  } 
+
   .section-title{
     display: flex;
     flex-direction: column;
@@ -283,51 +294,9 @@ body{
   .contact i{
     font-size: 20px;
   }
-
   [href ^="tel"]{
     color: whitesmoke !important;
   }
-
-  /* [name=name],
-  [name=email]{
-    width: 100%;
-  }
-  [class~=clipbord]{
-    color: var(--defaultOrange) !important;
-    right:0;
-    padding-right: 4%;
-    font-size: 16px !important;
-  }
-  
-  form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 3vh;
-    padding: 2%;
-    width: 100%;
-  }
-  form > div{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  input,
-  textarea{
-    width: 100%;
-  }
-  textarea{
-    height: 10vh;
-  }
-  .icon-bg {
-    display: flex;
-    position: relative;
-  }
-  .icon-bg i{
-    position: absolute;
-  } */
-
   form{
     display: flex;
     flex-direction: column;
@@ -351,16 +320,41 @@ body{
     right: 5%;
     bottom:10%;
   }
-  input,textarea{
+
+  .team img{
+    width: 100%;
+  }
+
+  .team figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .team figcaption{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+
+  .team h3,
+  .team small{
     padding: 3%;
-  }
-  textarea{
-    height: 10vh;
+    text-transform: uppercase;
+    background-color: white;
   }
 
-  [type=submit]{
-    width: 80%;
-    padding: 3% !important;
-  } 
+  .team h3{
+    font-size: 26px;
+    color: #FFAA00;
+  }
 
+  .team small{
+
+  }
+  .team > article:last-child{
+    row-gap: 10vh;
+  }
 }

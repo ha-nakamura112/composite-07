@@ -180,9 +180,9 @@ body{
   .about > :last-child > section{
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 15px;
   }
-
   .about h3{
     font-size: 20px;
   }
@@ -193,9 +193,11 @@ body{
     color: gray;
   }
   .about p{
+    width: 90%;
     font-size: 14px;
     color: gray;
     line-height: 1.5;
+    text-align: justify;
   }
 
   .about aside,
@@ -210,6 +212,22 @@ body{
     display: flex;
     justify-content: space-between;
   }
+  .about aside article{
+    background-color: #303030;
+    height: 2vh;
+    border-radius: 5px;
+  }
+  .about aside h6{
+    background-color: #FFAA00;
+    height: 2vh;
+    border-radius: 5px;
+  }
+  .about aside:nth-child(3) h6{
+    width: 80%;
+  }
+  .about aside:nth-child(4) h6{
+    width:60%;
+  }
 
   .portfolio{
     row-gap: 10vh;
@@ -222,4 +240,127 @@ body{
   .team img{
     width: 100%;
   }
+
+  main > section:last-child{
+    background-color: #303030;
+    color: whitesmoke;
+  }
+  .contact {
+    row-gap: 15vh;
+  }
+  .contact h2{
+    color: whitesmoke;
+  }
+  .contact h3{
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .contact section{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    row-gap: 5vh;
+  }
+  .contact ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    width: 90%;
+  }
+  .contact li{
+    display: flex;
+    column-gap: 3vh;
+    align-items: center;
+  }
+
+  .contact i,
+  .contact a{
+    color:var(--defaultOrange);
+    text-decoration: none;
+  }
+
+  .contact i{
+    font-size: 20px;
+  }
+
+  [href ^="tel"]{
+    color: whitesmoke !important;
+  }
+
+  /* [name=name],
+  [name=email]{
+    width: 100%;
+  }
+  [class~=clipbord]{
+    color: var(--defaultOrange) !important;
+    right:0;
+    padding-right: 4%;
+    font-size: 16px !important;
+  }
+  
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3vh;
+    padding: 2%;
+    width: 100%;
+  }
+  form > div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  input,
+  textarea{
+    width: 100%;
+  }
+  textarea{
+    height: 10vh;
+  }
+  .icon-bg {
+    display: flex;
+    position: relative;
+  }
+  .icon-bg i{
+    position: absolute;
+  } */
+
+  form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 5%;
+  }
+  form > div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  [name=name]{
+    width: 100%;
+  }
+
+  .icon-bg{
+    position: relative;
+  }
+  .icon-bg i{
+    position: absolute;
+    right: 5%;
+    bottom:10%;
+  }
+  input,textarea{
+    padding: 3%;
+  }
+  textarea{
+    height: 10vh;
+  }
+
+  [type=submit]{
+    width: 80%;
+    padding: 3% !important;
+  } 
+
 }

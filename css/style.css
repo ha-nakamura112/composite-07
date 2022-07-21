@@ -362,14 +362,50 @@ body{
     background-color: #202020;
     border-top: 1px solid dimgray;
     color: whitesmoke;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
   }
 
-  footer p{
-    font-size: 14px;
-    font-weight: 300;
+  footer > article{
+    width: 50%;
+  }
+  footer ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  footer li{
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    padding: 5%;
+    height: 2vh;
+    width: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .far-brands{
     display: flex;
   }
+  footer a{
+    color: whitesmoke;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+
+    align-items: center;
+    justify-content: center;
+  }
+  footer p{
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
 }

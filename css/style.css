@@ -1,0 +1,411 @@
+*{
+  margin:0;
+  padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --defaultOrange:#FFAA00;
+}
+
+body{
+  font-family: "Raleway" , sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+@media(min-width:300px){
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+  }
+  nav ul{
+    display: none;
+  }
+
+  nav details{
+    font-size: 22px;
+    position: relative;
+    width: 50%;
+    text-align: right;
+  }
+
+  details ul{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width:70%;
+  }
+  details li{
+    display: flex;
+    width: 100%;
+  }
+  details a{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0,0,0,.8);
+  }
+
+  header{
+    background-image: url("/img/mountain\ \(3\).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:50vh;
+  }
+
+  header > section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.3);
+  }
+  header h1,
+  header h2{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 300;
+  }
+  header h1{
+    font-size: 22px;
+  }
+  header h2{
+    font-size: 18px;
+  }
+
+  header a{
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--defaultOrange);
+    border-radius: 5px;
+    padding: 3% 5%;
+    color: white;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  main > section:nth-child(odd){
+    background-color: whitesmoke;
+  }
+
+  main > section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    align-items: center;
+    padding: 3%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  main > section > article:last-child{
+    display: flex;
+    flex-direction: column;
+  }
+
+  input,textarea{
+    padding: 3%;
+  }
+  textarea{
+    height: 10vh;
+  }
+  [type=submit]{
+    width: 80%;
+    padding: 3% !important;
+  } 
+
+  .section-title{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    align-items: center;
+    text-align: center;
+  }
+  .section-title h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    color: gray;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+  }
+  .section-title p{
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .features > article:last-child{
+    row-gap: 5vh;
+  }
+
+  .features  section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    text-align: center;
+    align-items: center;
+  }
+
+  .features aside{
+    padding: 3%;
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    font-size: 30px;
+    background-color: var(--defaultOrange);
+    color: whitesmoke;
+    border-radius: 50%;
+  }
+
+  .features h3{
+    color: gray;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 22px;
+  }
+  .features p{
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .about > article:last-child{
+    row-gap: 50px;
+  }
+  .about > :last-child > section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+  }
+  .about h3{
+    font-size: 20px;
+  }
+  .about h4{
+    text-transform: uppercase;
+    font-weight: 300;
+    word-spacing: 3px;
+    color: gray;
+  }
+  .about p{
+    width: 90%;
+    font-size: 14px;
+    color: gray;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .about aside,
+  .about div{
+    width: 100%;
+  }
+
+  progress{
+    display: none;
+  }
+  .about div{
+    display: flex;
+    justify-content: space-between;
+  }
+  .about aside article{
+    background-color: #303030;
+    height: 2vh;
+    border-radius: 5px;
+  }
+  .about aside h6{
+    background-color: #FFAA00;
+    height: 2vh;
+    border-radius: 5px;
+  }
+  .about aside:nth-child(3) h6{
+    width: 80%;
+  }
+  .about aside:nth-child(4) h6{
+    width:60%;
+  }
+
+  .portfolio{
+    row-gap: 10vh;
+  }
+
+  .portfolio figure{
+    row-gap: 10px;
+  }
+  .portfolio img,
+  .team img{
+    width: 100%;
+  }
+
+  main > section:last-child{
+    background-color: #303030;
+    color: whitesmoke;
+  }
+  .contact {
+    row-gap: 15vh;
+  }
+  .contact h2{
+    color: whitesmoke;
+  }
+  .contact h3{
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .contact section{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    row-gap: 5vh;
+  }
+  .contact ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    width: 90%;
+  }
+  .contact li{
+    display: flex;
+    column-gap: 3vh;
+    align-items: center;
+  }
+
+  .contact i,
+  .contact a{
+    color:var(--defaultOrange);
+    text-decoration: none;
+  }
+
+  .contact i{
+    font-size: 20px;
+  }
+  [href ^="tel"]{
+    color: whitesmoke !important;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 5%;
+  }
+  form > div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  [name=name]{
+    width: 100%;
+  }
+
+  .icon-bg{
+    position: relative;
+  }
+  .icon-bg i{
+    position: absolute;
+    right: 5%;
+    bottom:10%;
+  }
+
+  .team img{
+    width: 100%;
+  }
+
+  .team figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .team figcaption{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+
+  .team h3,
+  .team small{
+    padding: 3%;
+    text-transform: uppercase;
+    background-color: white;
+  }
+
+  .team h3{
+    font-size: 26px;
+    color: #FFAA00;
+  }
+
+  .team small{
+
+  }
+  .team > article:last-child{
+    row-gap: 10vh;
+  }
+
+  footer{
+    background-color: #202020;
+    border-top: 1px solid dimgray;
+    color: whitesmoke;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  footer > article{
+    width: 50%;
+  }
+  footer ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  footer li{
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    padding: 5%;
+    height: 2vh;
+    width: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .far-brands{
+    display: flex;
+  }
+  footer a{
+    color: whitesmoke;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+
+    align-items: center;
+    justify-content: center;
+  }
+  footer p{
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+}

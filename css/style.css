@@ -409,3 +409,121 @@ body{
   }
   
 }
+
+@media(min-width: 700px){
+  details{
+    display: none;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0% 3%;
+  }
+  nav h2{
+    width: 100%;
+    padding-top: 3%;
+  }
+  nav > ul{
+    display: flex;
+
+    align-items: flex-end;
+    width: 80%;
+  }
+
+  nav li{
+    display: flex;
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+  }
+
+  nav a{
+    padding: 2%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav a:hover{
+    color: white;
+    background-color: var(--defaultOrange);
+  }
+
+  header {
+    height: 40vh;
+  }
+  header h1{
+    font-size: 28px;
+  }
+  header h2{
+    font-size: 24px;
+    padding-bottom: 3%;
+  }
+  header a{
+    padding: 2% 5%;
+  }
+
+  footer {
+    justify-content: center;
+  }
+  .features > article:last-child{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .features section{
+    width: 45%;
+  }
+
+  /* about */
+  .about > article:last-child{
+    flex-direction: row;
+    column-gap: 3vh;
+  }
+  .about section{
+    width: 48%;
+  }
+  .about h3{
+    font-weight: 600;
+  }
+
+  .team figure,
+  .portfolio figure{
+    width: 45%;
+  }
+  .team h4{
+    font-size: 24px;
+  }
+  .team small{
+    font-size: 18px;
+  }
+  .team > article:last-child,
+  .portfolio > article:last-child{
+    flex-direction: row;
+    column-gap: 3vh;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .portfolio > article:last-child{
+    row-gap: 2vh;
+    column-gap: 2vh;
+    width:100%;
+  }
+
+  .contact > article:last-child{
+    flex-direction: row;
+  }
+  .contact section:last-child{
+    width: 80%;
+  }
+
+}

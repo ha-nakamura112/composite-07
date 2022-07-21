@@ -357,4 +357,19 @@ body{
   .team > article:last-child{
     row-gap: 10vh;
   }
+
+  footer{
+    background-color: #202020;
+    border-top: 1px solid dimgray;
+    color: whitesmoke;
+  }
+
+  footer p{
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .far-brands{
+    display: flex;
+  }
 }
